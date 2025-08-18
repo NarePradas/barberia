@@ -1,0 +1,323 @@
+ @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');  
+ @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+ /* Evitar espacio entre navbars */
+body {
+font-family: 'Montserrat', sans-serif;
+padding-top: 85px; /* 35px del superior + 50px aprox del principal */
+}
+ .hero {
+    position: relative;
+    background: url('img/jerry.jpg') no-repeat center center/cover;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden; /* importante para el overlay */
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* opacidad del overlay: 0.4 = 40% negro */
+    z-index: 1;
+}
+
+.hero h1 {
+    position: relative; /* para que esté por encima del overlay */
+    z-index: 2;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.hero h3{
+    position:relative;
+    z-index:2;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #c59d5f;
+}
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+footer a {
+    color: #c59d5f;
+    text-decoration: none;
+}
+.navbar-nav {
+margin: 0 auto;
+}
+.navbar-nav .nav-item {
+margin: 0 10px;
+}
+.navbar-nav .nav-link:hover {
+background-color: white;
+color: black !important;
+border-radius: 5px;
+transition: 0.3s;
+}
+/* Centrar las opciones del menú */
+.navbar-nav {
+    margin: 0 auto; /* Esto centra el ul dentro del navbar */
+}
+/* Espaciado entre los elementos */
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+/* Hover con fondo blanco y texto negro */
+.navbar-nav .nav-link:hover {
+    background-color: white;
+    color: black !important; /* Cambia el color del texto */
+    /* border-radius: 10px; Bordes redondeados opcionales */
+    transition: 0.3s;
+}
+.navbar-nav .nav-item{
+    font-family: 'Calisto MT', 'sans-serif';
+}
+/* css/style.css */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.service-card {
+    border: 1px solid rgb(179, 158, 83);
+    /* box-shadow: 0 0 15px #bbb6b9; */
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgb(179, 158, 83), 0 0 40px rgb(179, 158, 83);
+    border-color: rgb(179, 158, 83);
+}
+.gift-card{
+   background-color: #c9a23b;       /* color de fondo tipo box */
+    padding: 25px;                 /* espacio interno */
+    border-radius: 20px;           /* bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2); /* sombra para resaltar */
+    display: inline-block;         /* se ajusta al contenido */
+    padding: 30px;
+    border-radius: 10px;
+    height:100%;
+    transition: all 0.3s ease;
+
+}
+.service-gift-card {
+    border: 2px solid #bbb6b9;
+    box-shadow: 0 0 8px #bbb6b9;  /* sombra inicial más pequeña */
+    padding: 10px 15px;           /* menos espacio interno */
+    border-radius: 30px;
+    height: auto;                  /* se ajusta al contenido */
+    width: fit-content;            /* tamaño del box ajustado al contenido */
+    transition: all 0.3s ease;
+    display: inline-block;         /* para que no ocupe todo el ancho */
+}
+
+.service-gift-card:hover {
+    transform: translateY(-5px) scale(1.02);  /* efecto más sutil */
+    box-shadow: 0 0 15px #e8e6e7, 0 0 25px #e8e6e7; /* sombra al pasar mouse */
+    border-color: #e8e6e7;
+}   
+.service-gift-card-link {
+    text-decoration: none; /* quita el subrayado del enlace */
+}
+.whatsapp-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    border-radius: 50px;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 10px #25d366, 0 0 20px #128c7e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #25d366, 0 0 40px #128c7e;
+}
+/* Ondas animadas detrás del botón */
+.whatsapp-btn::before, .whatsapp-btn::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: radial-gradient(circle, rgba(37,211,102,0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    animation: ripple 2s infinite;
+}
+.whatsapp-btn::after {
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes ripple {
+    0% { transform: scale(0.5); opacity: 0.7; }
+    100% { transform: scale(2); opacity: 0; }
+}
+
+.whatsapp-btn i {
+    z-index: 1; /* ícono encima de las ondas */
+}
+
+.whatsapp-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #25d366, #128c7e);
+    border-radius: 50px;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 0 10px #25d366, 0 0 20px #128c7e;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #25d366, 0 0 40px #128c7e;
+}
+
+.whatsapp-btn::after {
+    animation-delay: 1s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes ripple {
+    0% { transform: scale(0.5); opacity: 0.7; }
+    100% { transform: scale(2); opacity: 0; }
+}
+
+.whatsapp-btn i {
+    z-index: 1;
+}
+#floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
+}
+.floating-btn.phone {
+    
+    background-color: rgba(51, 51, 51, 0.6); /* semi-transparente */
+    color: rgb(6, 6, 6);
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+    display: none; 
+    
+}
+.floating-btn.phone:hover {
+    background-color: #25D366; 
+    transform: scale(1.1); 
+    color: white;
+}
+
+.floating-btn.up {
+    background-color: rgba(51, 51, 51, 0.6); 
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+    display: none;
+}
+
+.floating-btn:hover {
+    background-color: rgb(199, 204, 199);
+    color: #333; 
+    transform: scale(1.15);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+#title-cards {
+    background-color: rgb(232, 232, 230); 
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+#title-cards h1 {
+    color: #060606; 
+    margin: 0;
+    font-weight: 700;
+}
+.service-giftcard {
+    border: 1px solid  rgb(185, 153, 45);
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.service-giftcard:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px  rgb(185, 153, 45), 0 0 40px  rgb(185, 153, 45);
+    border-color:  rgb(185, 153, 45);
+}
+.service-giftcard-link {
+    text-decoration: none; 
+}
+.service-giftcard:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}

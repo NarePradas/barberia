@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jerry´s Barberia</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <!-- Navbar superior -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(57, 54, 54, 0.7); height: 35px; padding: 0;">
+            <div class="container-fluid d-flex justify-content-center align-items-center text-white" style="font-size: 14px;">
+                <div class="d-flex align-items-center me-3">
+                    <i class="bi bi-clock-fill me-1"></i> Lunes a Sábados 08:00 a 12:00hs/ 14:00 20:30 hs
+                </div>
+                <a href="https://www.instagram.com/jerrys_barberia/" target="_blank" class="text-white d-flex align-items-center">
+                    <i class="bi bi-instagram me-1"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(0,0,0,0.7);padding: 5.4px; top: 35px;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#sobre-jerrys">SOBRE JERRY´S</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="index.html#servicios">SERVICIOS</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="tarjetas.html#contacto">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <!-- Gift cards -->
+        <section id="title-cards" class="card">
+                <div class="d-flex justify-content-end">
+                    <a href="index.html"  class="text-black"title="Volver a inicio">
+                        <i class="bi bi-house"></i>
+                    </a>
+                </div>
+                <div>
+                    <h1>GIFT CARDS</h1>
+                    <h6>Elegí la mejor opción para regalar.</h6>
+                </div>
+        </section>
+        <!-- Opciones de cards -->
+        <section id="servicios" class="py-5 text-center" style="background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.767)), url('img/labarberia.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                color: white;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- CARD 1 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(1)" class="service-giftcard text-center p-3" style="background-color: rgba(200, 200, 200, 0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">CORTE DE CABELLO Y ARREGLO DE BARBA</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Disfrutá de un servicio completo donde tu estilo es prioridad.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(2)" class="service-giftcard text-center p-3" style="background-color: rgba(200,200,200,0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">CORTE DE CABELLO</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Un corte profesional adaptado a tu estilo y personalidad.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(3)" class="service-giftcard text-center p-3" style="background-color: rgba(200,200,200,0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">ARREGLO DE BARBA</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Arreglá tu barba con precisión y estilo.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                    <!-- CARD 4 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(4)" class="service-giftcard text-center p-3" style="background-color: rgba(200,200,200,0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">AFEITADO CLASICO</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Reviví la experiencia tradicional del afeitado clásico.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                    <!-- CARD 5 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(5)" class="service-giftcard text-center p-3" style="background-color: rgba(200,200,200,0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">RAPADO Y ARREGLO DE BARBA</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Un servicio integral para un look impecable.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                    <!-- CARD 6 -->
+                    <div class="col-md-4 mb-4">
+                        <div onclick="seleccionarServicio(6)" class="service-giftcard text-center p-3" style="background-color: rgba(200,200,200,0.482); border-radius: 10px; cursor:pointer;">
+                            <h4 style="color: white; font-family: 'Calisto MT', serif;">CORTE DE CABELLO Y AFEITADO CLASICO</h4>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Experimentá un servicio completo de estilo y cuidado.</p>
+                            <p style="color: white; font-family: 'Calisto MT', serif;">Cada servicio incluye bebida de cortesía. Se utilizan productos de alta calidad, dermatológicamente testeados para un servicio seguro, cómodo y profesional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <!-- Contacto -->
+        <section id="contacto" class="py-5 bg-light text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h3 class="fw-bold">CONTACTO</h3>
+                        <p>📍 Dirección: Colón 568, Azul, Buenos Aires</p>
+                        <p>📞 Teléfono Jeremias: +54 9 2281-491331</p>
+                        <p>📞 Teléfono Manuel: +54 9 2281-531827</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold">UBICACION</h3>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.567248885582!2d-59.84912578476741!3d-36.77629798000164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fe9f1c9a4c5b1%3A0x53a2195d2d1c6f9a!2sCol%C3%B3n%20568%2C%20Azul%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1691875200000!5m2!1ses-419!2sar" 
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-3">
+            <div class="container d-flex align-items-center">
+                <img src="img/logo.png" alt="Jerry Barbería" width="50" height="50" class="me-2">
+                <p class="mb-0">&copy; 2025 Jerry´s Barbería</p>
+            </div>
+        </footer>
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Botones flotantes -->
+         <div id="floating-buttons">
+            <button id="scrollTopBtn" class="floating-btn up" onclick="scrollToTop()">
+                <i class="fas fa-arrow-up fa-lg"></i>
+            </button>
+            <button class="floating-btn phone" data-bs-toggle="modal" data-bs-target="#whatsappModal">
+                <i class="bi bi-whatsapp"></i>
+            </button>
+        </div>
+        <!-- Modal de selección de contacto -->
+        <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+            <div class="modal-header">
+                <h5 class="modal-title" id="whatsappModalLabel">¡Escribinos!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-around">
+                <a href="https://wa.me/5492281491331?text=Hola%20Jere" target="_blank" class="btn btn-success">
+                    <i class="bi bi-whatsapp"></i> Jere
+                </a>
+                <a href="https://wa.me/5492281491444?text=Hola%20Manu" target="_blank" class="btn btn-success">
+                    <i class="bi bi-whatsapp"></i> Manu
+                </a>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script>
+        const phoneBtns = document.querySelectorAll('.floating-btn.phone'); 
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                phoneBtns.forEach(btn => btn.style.display = 'flex'); 
+                scrollTopBtn.style.display = 'flex';
+            } else {
+                phoneBtns.forEach(btn => btn.style.display = 'none'); 
+                scrollTopBtn.style.display = 'none';
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function seleccionarServicio(opcion) {
+            let mensaje = "";
+
+            // Switch para asignar mensaje según el servicio
+            switch(opcion) {
+                case 1:
+                    mensaje = "Hola, quiero consultar por el servicio CORTE DE CABELLO Y ARREGLO DE BARBA.";
+                    break;
+                case 2:
+                    mensaje = "Hola, quiero consultar por el servicio CORTE DE CABELLO.";
+                    break;
+                case 3:
+                    mensaje = "Hola, quiero consultar por el servicio ARREGLO DE BARBA.";
+                    break;
+                case 4:
+                    mensaje = "Hola, quiero consultar por el servicio AFEITADO CLASICO.";
+                    break;
+                case 5:
+                    mensaje = "Hola, quiero consultar por el servicio RAPADO Y ARREGLO DE BARBA.";
+                    break;
+                case 6:
+                    mensaje = "Hola, quiero consultar por el servicio CORTE DE CABELLO Y AFEITADO CLASICO.";
+                    break;
+                default:
+                    mensaje = "Hola, quiero consultar por un servicio.";
+            }
+            var modal = new bootstrap.Modal(document.getElementById('whatsappModal'));
+            modal.show();
+        }
+
+        // Al hacer clic en cada botón del modal, abrimos WhatsApp con el mensaje
+        document.getElementById("btnJeremias").addEventListener("click", function() {
+            window.open(`https://wa.me/5492281491331?text=${encodeURIComponent(mensajeSeleccionado)}`, "_blank");
+        });
+
+        document.getElementById("btnManuel").addEventListener("click", function() {
+            window.open(`https://wa.me/5492281531827?text=${encodeURIComponent(mensajeSeleccionado)}`, "_blank");
+        });
+        
+        </script>
+    </body>
+</html>
