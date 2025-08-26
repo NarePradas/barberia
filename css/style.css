@@ -312,9 +312,26 @@ transition: 0.3s;
 
 #title-cards {
     background-color: rgb(232, 232, 230); 
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     text-align: center;
     font-family: 'Montserrat', sans-serif; 
+    padding: 70px 20px 20px; /* Ajusta 100px según la altura de tu navbar fija */
+    background: #fff; /* Para contraste si lo necesitás */
+    position: relative;
+    z-index: 1;
+}
+#title-cards .home-icon {
+  padding: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease;
+}
+
+#title-cards .home-icon:hover {
+  transform: scale(1.2);
 }
 
 #title-cards h1 {
@@ -342,4 +359,9 @@ transition: 0.3s;
     transform: translateY(-5px) scale(1.02);
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
+}
+#title-cards .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* título a la izquierda, icono a la derecha */
 }
