@@ -3,8 +3,10 @@
  /* Evitar espacio entre navbars */
 body {
 font-family: 'Montserrat', sans-serif;
-padding-top: 85px; /* 35px del superior + 50px aprox del principal */
+  padding-top: 35px; 
+  overflow-x: hidden;
 }
+
 #inicio h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem; /* desktop */
