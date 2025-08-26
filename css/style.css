@@ -5,6 +5,26 @@ body {
 font-family: 'Montserrat', sans-serif;
 padding-top: 85px; /* 35px del superior + 50px aprox del principal */
 }
+#inicio h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem; /* desktop */
+}
+
+#inicio h3 {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem; /* desktop */
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 3rem;
+    }
+    #inicio h3 {
+        font-size: 1.5rem;
+    }
+}
+
  .hero {
     position: relative;
     background: url('img/jerry.jpg') no-repeat center center/cover;
